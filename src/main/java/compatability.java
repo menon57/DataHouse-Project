@@ -45,7 +45,8 @@ class compatibility {
             double avgSpicyFoodTolerance = 0.0;
 
             //To be written to output.json
-            JSONArray ret = new JSONArray();
+            JSONObject ret = new JSONObject();
+            JSONArray scores = new JSONArray();
 
             //Read in and sum each attribute for each team member
             for (int i = 0; i < n; i++) {
@@ -75,8 +76,10 @@ class compatibility {
                 JSONObject toAdd = new JSONObject();
                 toAdd.put("name", applicant.get("name"));
                 toAdd.put("compatibility", calculateCompatibility(teamAvg, (JSONObject) applicant.get("attributes")));
-                ret.add(toAdd);
+                scores.add(toAdd);
             }
+
+            ret.put("scoredApplicants", scores);
 
             //Write results to output.json
             try (FileWriter fw = new FileWriter(".\\data\\output.json")) {
