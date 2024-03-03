@@ -33,7 +33,7 @@
         "intelligence" : 4,
         "strength" : 5,
         "endurance" : 2,
-        "spicyFoodTolerance" : 1000000
+        "spicyFoodTolerance" : 1
       }
     }, {
       "name" : "Jane",
@@ -41,7 +41,7 @@
         "intelligence" : 7,
         "strength" : 4,
         "endurance" : 3,
-        "spicyFoodTolerance" : 1000000
+        "spicyFoodTolerance" : 2
       }
     }, {
       "name": "Joe",
@@ -49,7 +49,7 @@
         "intelligence": 1,
         "strength": 1,
         "endurance": 1,
-        "spicyFoodTolerance": 4
+        "spicyFoodTolerance": 10
       }
     }
   ]

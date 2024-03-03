@@ -32,10 +32,10 @@ class compatibility {
             int m = applicants.size();
 
             //Weights for each attribute, change as necessary
-            weights.put("endurance", 0.001);
-            weights.put("intelligence", 0.001);
-            weights.put("strength", 0.001);
-            weights.put("spicyFoodTolerance", 0.9);
+            weights.put("endurance", 0.4);
+            weights.put("intelligence", 0.3);
+            weights.put("strength", 0.2);
+            weights.put("spicyFoodTolerance", 0.1);
 
             //Find average attribute values across team
             JSONObject teamAvg = new JSONObject();
